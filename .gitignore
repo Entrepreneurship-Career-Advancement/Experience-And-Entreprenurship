@@ -8,7 +8,19 @@ __pycache__/
 # Ignore Original Paper Archive
 Original Paper Archive/
 
-# Ignore data files under D - Data
-Data Extraction and Analysis/D - Data/**
-!Data Extraction and Analysis/D - Data/**/
-!Data Extraction and Analysis/D - Data/**/.gitkeep
+# Ignore all data files globally (including CSVs, spreadsheets, compressed archives, pickles)
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.zip
+*.tar.gz
+*.rar
+*.pkl
+*.h5
+*.parquet
+*.feather
+
+# Exclude .gitkeep files to keep empty directory structure in git if necessary
+!**/.gitkeep
+
